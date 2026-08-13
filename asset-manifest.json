@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/semana_academica_biotec/static/css/main.756a28ed.css",
-    "main.js": "/semana_academica_biotec/static/js/main.0fa44ae8.js",
-    "static/media/header.png": "/semana_academica_biotec/static/media/header.e03ae856d9a049c2c41e.png",
-    "index.html": "/semana_academica_biotec/index.html",
-    "main.756a28ed.css.map": "/semana_academica_biotec/static/css/main.756a28ed.css.map",
-    "main.0fa44ae8.js.map": "/semana_academica_biotec/static/js/main.0fa44ae8.js.map"
+    "main.css": "/site/static/css/main.756a28ed.css",
+    "main.js": "/site/static/js/main.ddcaa91b.js",
+    "static/media/header.png": "/site/static/media/header.e03ae856d9a049c2c41e.png",
+    "index.html": "/site/index.html",
+    "main.756a28ed.css.map": "/site/static/css/main.756a28ed.css.map",
+    "main.ddcaa91b.js.map": "/site/static/js/main.ddcaa91b.js.map"
   },
   "entrypoints": [
     "static/css/main.756a28ed.css",
-    "static/js/main.0fa44ae8.js"
+    "static/js/main.ddcaa91b.js"
   ]
 }
