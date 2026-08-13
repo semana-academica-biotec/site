@@ -1,7 +1,7 @@
 {
   "name": "semana-academica-biotec",
   "version": "0.1.0",
-  "homepage": "https://perezlui.github.io/semana_academica_biotec/",
+  "homepage": "https://semana-academica-biotec.github.io/site/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
