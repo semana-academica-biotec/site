@@ -40,7 +40,18 @@ const Navbar = () => {
                                     aria-expanded={dropdownOpen ? "true" : "false"}
                                     onClick={() => navigate("/submeta")} // Prevent default navigation
                                 >
-                                    Submeta seu trabalho
+                                    Submeta<br/> seu trabalho
+                                </a>
+                            </li>
+
+                            <li className="tab p-2 nav-item">
+                                <a 
+                                  className="navtext nav-link" 
+                                  href="#" 
+                                  onClick={() => navigate("/regimentos")}
+                                >
+                                  Regimentos
+                                  <br/>e Documentos
                                 </a>
                             </li>
 
@@ -50,7 +61,7 @@ const Navbar = () => {
                                   href="#" 
                                   onClick={() => navigate("/minicursos")}
                                 >
-                                  Mini cursos
+                                  Minicursos
                                 </a>
                             </li>
 
@@ -61,7 +72,7 @@ const Navbar = () => {
                                 <a className="navtext nav-link" href="#" onClick={() => navigate("/certificados")}>Certificados</a>
                             </li>
                             <li className="tab p-2 nav-item">
-                                <a className="navtext nav-link" href="#" onClick={() => navigate("/faq")}>Perguntas Frequentes</a>
+                                <a className="navtext nav-link" href="#" onClick={() => navigate("/faq")}>Perguntas<br></br> Frequentes</a>
                             </li>
                         </ul>
                     </div>

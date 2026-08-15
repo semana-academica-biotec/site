@@ -7,6 +7,7 @@ import Submeta from "./components/Submeta";
 import Ensino from "./components/Papers/Ensino";
 import PesquisaGrad from "./components/Papers/PesquisaGrad";
 import PesquisaPos from "./components/Papers/PesquisaPos";
+import Regimentos from "./components/Regimentos";
 import Minicursos from "./components/Minicursos";
 import Programacao from "./components/Programacao";
 import Footer from "./components/Footer";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/ensino-extensao" element={<Ensino />} />
           <Route path="/pesquisa-graduacao" element={<PesquisaGrad />} />
           <Route path="/pesquisa-pos-graduacao" element={<PesquisaPos />} />
+          <Route path="/regimentos" element={<Regimentos />} />
           <Route path="/minicursos" element={<Minicursos />} />
           <Route path="/programacao" element={<Programacao />} />
           <Route path="/certificados" element={<Certificados />} />
