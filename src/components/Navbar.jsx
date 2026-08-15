@@ -42,29 +42,18 @@ const Navbar = () => {
                                 >
                                     Submeta seu trabalho
                                 </a>
-                                {dropdownOpen && ( // Conditionally render the dropdown menu
-                                    <ul
-                                        className="custom-dropdown-menu" // Custom class for the dropdown menu
-                                        aria-labelledby="submetaDropdown"
-                                    >
-                                        <li>
-                                            <a className="dropdown-item" href="#" onClick={() => navigate("/pesquisa-graduacao")}>
-                                                Pesquisa - Graduação
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item" href="#" onClick={() => navigate("/pesquisa-pos-graduacao")}>
-                                                Pesquisa - Pós-graduação
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item" href="#" onClick={() => navigate("/ensino-extensao")}>
-                                                Ensino/Extensão - Geral
-                                            </a>
-                                        </li>
-                                    </ul>
-                                )}
                             </li>
+
+                            <li className="tab p-2 nav-item">
+                                <a 
+                                  className="navtext nav-link" 
+                                  href="#" 
+                                  onClick={() => navigate("/minicursos")}
+                                >
+                                  Mini cursos
+                                </a>
+                            </li>
+
                             <li className="tab p-2 nav-item">
                                 <a className="navtext nav-link" href="#" onClick={() => navigate("/programacao")}>Programação</a>
                             </li>
