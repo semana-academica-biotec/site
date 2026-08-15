@@ -21,16 +21,25 @@ const Navbar = () => {
             
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid d-flex flex-column align-items-center">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button 
+                        className="navbar-toggler" 
+                        type="button" 
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        aria-expanded={isMenuOpen ? "true" : "false"}
+                        aria-label="Toggle navigation"
+                    >
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <div 
+                        className={`collapse navbar-collapse justify-content-center ${isMenuOpen ? 'show' : ''}`} 
+                        id="navbarNav"
+                    >
                         <ul className="navbar-nav">
                             <li className="tab nav-item p-2">
-                                <a className="navtext nav-link" href="#" onClick={() => navigate("/")}>Início</a>
+                                <a className="navtext nav-link" href="#" onClick={() => handleNavigation("/")}>Início</a>
                             </li>
                             <li className="tab nav-item p-2">
-                                <a className="navtext nav-link" href="#" onClick={() => navigate("/inscrições")}>Inscreva-se</a>
+                                <a className="navtext nav-link" href="#" onClick={() => handleNavigation("/inscrições")}>Inscreva-se</a>
                             </li>
                             <li
                                 className="tab nav-item p-2 custom-dropdown" // Add a custom class for styling
@@ -43,7 +52,7 @@ const Navbar = () => {
                                     id="submetaDropdown"
                                     role="button"
                                     aria-expanded={dropdownOpen ? "true" : "false"}
-                                    onClick={() => navigate("/submeta")} // Prevent default navigation
+                                    onClick={() => handleNavigation("/submeta")} // Prevent default navigation
                                 >
                                     Submeta<br/> seu trabalho
                                 </a>
@@ -53,7 +62,7 @@ const Navbar = () => {
                                 <a 
                                   className="navtext nav-link" 
                                   href="#" 
-                                  onClick={() => navigate("/regimentos")}
+                                  onClick={() => handleNavigation("/regimentos")}
                                 >
                                   Regimentos
                                   <br/>e Documentos
@@ -64,20 +73,20 @@ const Navbar = () => {
                                 <a 
                                   className="navtext nav-link" 
                                   href="#" 
-                                  onClick={() => navigate("/minicursos")}
+                                  onClick={() => handleNavigation("/minicursos")}
                                 >
                                   Minicursos
                                 </a>
                             </li>
 
                             <li className="tab p-2 nav-item">
-                                <a className="navtext nav-link" href="#" onClick={() => navigate("/programacao")}>Programação</a>
+                                <a className="navtext nav-link" href="#" onClick={() => handleNavigation("/programacao")}>Programação</a>
                             </li>
                             <li className="tab p-2 nav-item">
-                                <a className="navtext nav-link" href="#" onClick={() => navigate("/certificados")}>Certificados</a>
+                                <a className="navtext nav-link" href="#" onClick={() => handleNavigation("/certificados")}>Certificados</a>
                             </li>
                             <li className="tab p-2 nav-item">
-                                <a className="navtext nav-link" href="#" onClick={() => navigate("/faq")}>Perguntas<br></br> Frequentes</a>
+                                <a className="navtext nav-link" href="#" onClick={() => handleNavigation("/faq")}>Perguntas<br></br> Frequentes</a>
                             </li>
                         </ul>
                     </div>
