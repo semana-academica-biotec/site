@@ -8,6 +8,11 @@ import headerImage from '../media/header.png';
 const Navbar = () => {
     const navigate = useNavigate();
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const handleNavigation = (path) => {
+        setIsMenuOpen(false); // Close the mobile menu automatically
+        navigate(path);       // Navigate to the requested route
+    };
 
     return (
         <div className='header-text'>
