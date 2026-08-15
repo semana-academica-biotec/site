@@ -8,10 +8,15 @@ import headerImage from '../media/header.png';
 const Navbar = () => {
     const navigate = useNavigate();
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    
+    // State to control whether the mobile navigation menu is open or closed
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const handleNavigation = (path) => {
-        setIsMenuOpen(false); // Close the mobile menu automatically
-        navigate(path);       // Navigate to the requested route
+
+    // Keep ONLY this single block for handleNavigation.
+    const handleNavigation = (e, path) => {
+        e.preventDefault(); // Prevents the href="#" from redirecting to root
+        setIsMenuOpen(false); // Closes the mobile menu automatically
+        navigate(path);       // Navigates to the requested route
     };
 
     return (
@@ -36,10 +41,11 @@ const Navbar = () => {
                     >
                         <ul className="navbar-nav">
                             <li className="tab nav-item p-2">
-                                <a className="navtext nav-link" href="#" onClick={() => handleNavigation("/")}>Início</a>
+                                {/* Notice the (e) added to both the arrow function and handleNavigation */}
+                                <a className="navtext nav-link" href="#" onClick={(e) => handleNavigation(e, "/")}>Início</a>
                             </li>
                             <li className="tab nav-item p-2">
-                                <a className="navtext nav-link" href="#" onClick={() => handleNavigation("/inscrições")}>Inscreva-se</a>
+                                <a className="navtext nav-link" href="#" onClick={(e) => handleNavigation(e, "/inscrições")}>Inscreva-se</a>
                             </li>
                             <li
                                 className="tab nav-item p-2 custom-dropdown" // Add a custom class for styling
@@ -52,7 +58,7 @@ const Navbar = () => {
                                     id="submetaDropdown"
                                     role="button"
                                     aria-expanded={dropdownOpen ? "true" : "false"}
-                                    onClick={() => handleNavigation("/submeta")} // Prevent default navigation
+                                    onClick={(e) => handleNavigation(e, "/submeta")} // Prevent default navigation
                                 >
                                     Submeta<br/> seu trabalho
                                 </a>
@@ -62,7 +68,7 @@ const Navbar = () => {
                                 <a 
                                   className="navtext nav-link" 
                                   href="#" 
-                                  onClick={() => handleNavigation("/regimentos")}
+                                  onClick={(e) => handleNavigation(e, "/regimentos")}
                                 >
                                   Regimentos
                                   <br/>e Documentos
@@ -73,20 +79,20 @@ const Navbar = () => {
                                 <a 
                                   className="navtext nav-link" 
                                   href="#" 
-                                  onClick={() => handleNavigation("/minicursos")}
+                                  onClick={(e) => handleNavigation(e, "/minicursos")}
                                 >
                                   Minicursos
                                 </a>
                             </li>
 
                             <li className="tab p-2 nav-item">
-                                <a className="navtext nav-link" href="#" onClick={() => handleNavigation("/programacao")}>Programação</a>
+                                <a className="navtext nav-link" href="#" onClick={(e) => handleNavigation(e, "/programacao")}>Programação</a>
                             </li>
                             <li className="tab p-2 nav-item">
-                                <a className="navtext nav-link" href="#" onClick={() => handleNavigation("/certificados")}>Certificados</a>
+                                <a className="navtext nav-link" href="#" onClick={(e) => handleNavigation(e, "/certificados")}>Certificados</a>
                             </li>
                             <li className="tab p-2 nav-item">
-                                <a className="navtext nav-link" href="#" onClick={() => handleNavigation("/faq")}>Perguntas<br></br> Frequentes</a>
+                                <a className="navtext nav-link" href="#" onClick={(e) => handleNavigation(e, "/faq")}>Perguntas<br></br> Frequentes</a>
                             </li>
                         </ul>
                     </div>

@@ -1,6 +1,6 @@
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
 import React from "react";
 import Inscrever from "./components/Inscrever";
 import Submeta from "./components/Submeta";
@@ -17,7 +17,7 @@ import FAQ from "./components/FAQ";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -34,7 +34,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
