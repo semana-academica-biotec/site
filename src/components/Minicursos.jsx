@@ -7,7 +7,7 @@ const Minicursos = () => {
         Minicursos
       </h2>
       
-      <p>
+      <p className='fs-4 mt-5 recuo'>
         A II Semana Acadêmica de Biotecnologia contará com minicursos que serão realizados ao longo de <strong>dois dias</strong>, conforme a programação oficial do evento.
 
         <br/><br/>Cada participante poderá se inscrever <strong>em até 2 (dois)  minicursos</strong>, de acordo com a disponibilidade de vagas e a programação.

@@ -8,8 +8,8 @@ const Submeta = () => {
             Submeta seu trabalho
           </h2>
           <h3 className="text-center mb-5 fw-bold"
-          style={{ color:'#2c3e50'}}>As submissões estarão abertas a partir de 17/08!</h3>
-        <p>
+          style={{ color:'#2c3e50'}}>As submissões de resumos estão abertas até dia 21/09!</h3>
+        <p className='fs-4 mt-5 recuo'>
             Poderão ser submetidos trabalhos nas modalidades <strong>Pesquisa, Ensino ou Extensão</strong> por alunos de <strong>graduação</strong> ou
             <strong> pós-graduação</strong>, desde que estejam de acordo com as normas estabelecidas para submissão, e sejam relacionados à área de Biotecnologia.
             <br/><br/>
@@ -17,6 +17,21 @@ const Submeta = () => {
             <br/><br/>
             Os trabalhos que forem aprovados pela Comissão Científica mas não forem selecionados para apresentação oral serão publicados nos <strong>anais do evento</strong>, conforme as normas estabelecidas.
         </p>
+
+
+            <div className="text-center mt-4">
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdweS2H_a2xEK2xkVQS0mwuRNsfnztmR47niK0z8x4eVmXzSA/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-theme btn-lg p-4"
+            >
+                Clique para submeter seu resumo!
+            </a>
+            <br/><br/>
+
+            </div>
+
 
             <div className="alert alert-primary d-flex align-items-center" role="alert">  
                 <svg 
@@ -36,17 +51,6 @@ const Submeta = () => {
                     <br/>Além disso, a submissão do trabalho não garante sua seleção para apresentação oral.
                     </div>
             </div>
-            {/* Main submission button */}
-            {/* <div className="text-center mt-4">
-            <a
-                href="YOUR_GOOGLE_FORM_LINK_HERE"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-theme btn-lg px-5"
-            >
-                Acessar Formulário de Submissão
-            </a>
-            </div>*/}
       </div>
     </div>
   );

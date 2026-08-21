@@ -60,7 +60,7 @@ const Inscrever = () => {
               </table>
             </div>
             <br /><br />
-            <p>A inscrição na modalidade <strong>ouvinte</strong> permite a participação nas palestras e demais atividades destinadas aos participantes, conforme a <strong>programação oficial do evento</strong>. Será emitido certificado de participação como ouvinte, de acordo com os critérios estabelecidos no Regimento da II Semana Acadêmica de Biotecnologia.<br /><br />As inscrições estarão sujeitas à disponibilidade de vagas e deverão ser realizadas dentro dos períodos estabelecidos para cada lote.</p>
+            <p className='fs-4 mt-5 recuo'>A inscrição na modalidade <strong>ouvinte</strong> permite a participação nas palestras e demais atividades destinadas aos participantes, conforme a <strong>programação oficial do evento</strong>. Será emitido certificado de participação como ouvinte, de acordo com os critérios estabelecidos no Regimento da II Semana Acadêmica de Biotecnologia.<br /><br />As inscrições estarão sujeitas à disponibilidade de vagas e deverão ser realizadas dentro dos períodos estabelecidos para cada lote.</p>
 
             <p className='mt-4 text-center'>
             <a
