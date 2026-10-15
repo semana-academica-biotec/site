@@ -184,7 +184,7 @@ const Programacao = () => {
                 </li>
                 <li className="list-group-item d-flex align-items-center py-3 bg-light">
                   <strong className="text-dark me-4" style={{ minWidth: '60px' }}>10:00</strong>
-                  <span>Coffee Break</span>
+                  <span>Coffee Break e Credenciamento</span>
                 </li>
                 <li className="list-group-item d-flex align-items-center py-3">
                   <strong className="text-dark me-4" style={{ minWidth: '60px' }}>10:30</strong>
@@ -223,7 +223,7 @@ const Programacao = () => {
                 </li>
                 <li className="list-group-item d-flex align-items-center py-3 bg-light">
                   <strong className="text-dark me-4" style={{ minWidth: '60px' }}>15:00</strong>
-                  <span>Coffee Break</span>
+                  <span>Coffee Break e Credenciamento</span>
                 </li>
                 <li className="list-group-item d-flex align-items-center py-3">
                   <strong className="text-dark me-4" style={{ minWidth: '60px' }}>15:20</strong>
@@ -263,7 +263,7 @@ const Programacao = () => {
                 </li>
                 <li className="list-group-item d-flex align-items-center py-3 bg-light">
                   <strong className="text-dark me-4" style={{ minWidth: '60px' }}>9:30</strong>
-                  <span>Coffee Break</span>
+                  <span>Coffee Break e Credenciamento</span>
                 </li>
                 <li className="list-group-item d-flex align-items-center py-3">
                   <strong className="text-dark me-4" style={{ minWidth: '60px' }}>10:00</strong>
@@ -306,7 +306,7 @@ const Programacao = () => {
                 </li>
                 <li className="list-group-item d-flex align-items-center py-3 bg-light">
                   <strong className="text-dark me-4" style={{ minWidth: '60px' }}>15:00</strong>
-                  <span>Coffee Break</span>
+                  <span>Coffee Break e Credenciamento</span>
                 </li>
                 <li className="list-group-item d-flex align-items-center py-3">
                   <strong className="text-dark me-4" style={{ minWidth: '60px' }}>15:20</strong>
